@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather Forcast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" > 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+    <link rel="stylesheet" href="./static/style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./static/app.js"></script>
+    
+</head>
+
+<body>
+    <div class="w3-container w3-padding">
+        <div class="w3-panel w3-indigo">
+            <h2 class="w3-center"> Weather Dashboard</h2>
+        </div>  
+        <div class="search-placeholder">
+            <div class="w3-row">
+    <div class="w3-col s12 m4 l3 left-sidebar">
+        <h2 class="heading">Search For a City</h2>
+        <div>
+            <input type="text" value="" class="search-input w3-round w3-input w3-border" />
+        </div>
+        <div class="w3-margin-top">
+            <button type="button"
+                class="w3-block w3-button w3-blue w3-hover-blue w3-round search-btn">Search</button>
+        </div>
+        <hr>
+        <div class="w3-margin-top search-cities">
+          
+                  
+        </div>
+    </div><!-- left-sidebar -->
+     <div class="w3-col s12 m8 l9 right-sidebar">
+        <div class="right-sidebar-inner w3-padding">
+            <div class="w3-border w3-border-black current-forcasts">
+                <h2 class="heading"><span class="city">&nbsp;</span> (<span class="currdate"></span>)</h2> <img class="wicon" src="http://openweathermap.org/img/wn/02d@2x.png" alt="" width="50px" height="50px">
+                <div class="w3-margin-top ">
+                    Temp: <span class="temp"></span>&#176;F 
+                </div>
+                <div class="w3-margin-top ">
+                    Wind: <span class="wind"></span> MPH
+                </div>
+                <div class="w3-margin-top w3-margin-bottom">
+                     Humidity: <span class="humidity"></span> %
+                </div>
+            </div><!-- current-forcasts -->
+            <div class="future-forcasts ">
+                <h3 class="heading">5-Day Forcast:</h3>
+                <div class="w3-row">
+                    <div class="block-template w3-hide">
+                        <div class="w3-col w3-one-fifth info-block">
+                            <div class="w3-blue-grey inner ">
+                                <div class="w3-margin-bottom ">
+                                    <h4 class="heading"><span class="currdate"></span></h4>
+                                    <img class="wicon" src="http://openweathermap.org/img/wn/02d@2x.png" alt="" width="50px" height="50px">
+                                </div>
+                                <div class="w3-margin-bottom ">
+                                    Temp: <span class="temp"></span>&#176;F
+                                </div>
+                                <div class="w3-margin-bottom ">
+                                    Wind: <span class="wind"></span> MPH
+                                </div>
+                                <div class="w3-margin-bottom">
+                                    Humidity: <span class="humidity"></span> %
+                                </div>
+                            </div><!-- w3-blue -->
+                        </div><!-- w3-col -->
+                    </div>
+                    <div class="future-forcasts-blocks">
+
+                    </div>
+                </div><!-- w3-row   -->
+            </div><!-- current-forcasts -->
+        </div><!-- right-sidebar-inner -->
+    </div><!-- right-sidebar   -->
+</div><!-- w3-row --> 
+        </div><!--   search-placeholder -->
+        
+    </div><!-- w3-container -->
+</body>
+</html>

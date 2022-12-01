@@ -1,0 +1,9 @@
+.w3-one-fifth{width:20%}
+.info-block  {  }
+.info-block .inner { margin-right: 25px;padding:8px;padding-top: 0;background-color: #323d4f!important; }
+.info-block:last-child .inner { margin-right: 25px; min-height: 172px;}
+.heading{ font-weight: bold; text-transform: capitalize;}
+.current-forcasts{padding: 0 8px;}
+.current-forcasts .heading{ margin: 0; display: inline;}
+hr{border-top: 2px solid #ccc;}
+.search-cities button{ text-transform: capitalize; }
