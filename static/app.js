@@ -2,7 +2,7 @@ jQuery( document ).ready(function() {
     parentElem= jQuery('.future-forcasts').find('.future-forcasts-blocks') 
 
     fetchApi=function(city){
-        var coordinates = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=637d3ef92eb55ef9240a3ef3795ee168';
+        var coordinates = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=637d3ef92eb55ef9240a3ef3795ee168';
 
         fetch(coordinates)
             .then(response => response.json())
@@ -58,7 +58,7 @@ jQuery( document ).ready(function() {
         jQuery('.current-forcasts').find('.temp').html(temp)
         jQuery('.current-forcasts').find('.wind').html(wind)
         jQuery('.current-forcasts').find('.humidity').html(humidity)
-        jQuery('.current-forcasts').find('.wicon').attr("src","http://openweathermap.org/img/wn/"+weatherIcon+"@2x.png")
+        jQuery('.current-forcasts').find('.wicon').attr("src","https://openweathermap.org/img/wn/"+weatherIcon+"@2x.png")
          
         var prevDateString='';
         var listIgnoreItem=0;
@@ -76,7 +76,7 @@ jQuery( document ).ready(function() {
                     jQuery('.future-forcasts').find('.block-template').find('.temp').html(item.main.temp)
                     jQuery('.future-forcasts').find('.block-template').find('.wind').html(item.wind.speed)
                     jQuery('.future-forcasts').find('.block-template').find('.humidity').html(item.main.humidity)
-                    jQuery('.future-forcasts').find('.block-template').find('.wicon').attr("src","http://openweathermap.org/img/wn/"+item.weather[0].icon+"@2x.png")
+                    jQuery('.future-forcasts').find('.block-template').find('.wicon').attr("src","https://openweathermap.org/img/wn/"+item.weather[0].icon+"@2x.png")
                     blockhtml=jQuery('.future-forcasts').find('.block-template').html()
                     future_forcasts_html+=blockhtml;
                     fiveDayData.push(item)
